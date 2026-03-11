@@ -3,6 +3,9 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: "Complete Web Solutions Nepal | Professional Web & Digital Services",
+  icons: {
+    icon: "/favicon.svg",
+  },
   description:
     "Complete Web Solutions Nepal delivers cutting-edge web development, digital marketing, SEO, mobile apps, and IT solutions for businesses across Nepal and beyond.",
   keywords:
@@ -13,6 +16,7 @@ export const metadata: Metadata = {
     description: "Professional Web & Digital Services in Nepal",
     type: "website",
     locale: "en_US",
+    
   },
 };
 
