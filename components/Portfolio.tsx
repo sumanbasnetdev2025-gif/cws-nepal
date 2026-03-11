@@ -47,14 +47,14 @@ const projects = [
 
 export default function Portfolio() {
   return (
-    <section id="portfolio" className="section-padding bg-slate-950">
-      <div className="container-max">
+    <section id="portfolio" className="py-16 sm:py-20 px-4 sm:px-6 lg:px-12 bg-slate-950">
+      <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="text-center mb-16">
           <span className="inline-block text-cyan-400 font-semibold text-sm tracking-widest uppercase mb-3 bg-cyan-400/10 px-4 py-1.5 rounded-full border border-cyan-400/20">
             Our Work
           </span>
-          <h2 className="font-display font-extrabold text-4xl md:text-5xl text-white mb-4">
+          <h2 className="font-display font-extrabold text-3xl sm:text-4xl md:text-5xl text-white mb-4">
             Projects That{" "}
             <span className="gradient-text">Deliver Results</span>
           </h2>

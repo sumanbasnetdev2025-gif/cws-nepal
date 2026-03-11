@@ -21,7 +21,7 @@ const quickLinks = [
 export default function Footer() {
   return (
     <footer className="bg-slate-950 text-slate-400">
-      <div className="container-max px-6 md:px-10 lg:px-16 pt-16 pb-8">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 pt-14 pb-8">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
           {/* Brand */}
           <div className="lg:col-span-1">
@@ -39,7 +39,7 @@ export default function Footer() {
               </div>
             </div>
             <p className="text-sm leading-relaxed mb-5">
-              Nepal-based digital agency helping Nepalese businesses grow
+              Nepal-based digital agency helping in businesses growth
               and succeed online with world-class web and digital services.
             </p>
             <div className="flex gap-3">

@@ -31,7 +31,7 @@ export default function Hero() {
       <div className="absolute bottom-1/4 right-1/4 w-80 h-80 bg-cyan-500 rounded-full filter blur-3xl opacity-15 animate-pulse delay-1000" />
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-blue-800 rounded-full filter blur-3xl opacity-10" />
 
-      <div className="container-max relative z-10 px-6 md:px-10 lg:px-16 py-32">
+      <div className="max-w-7xl mx-auto relative z-10 px-4 sm:px-6 lg:px-12 pt-28 pb-20 sm:pt-36 sm:pb-24">
         <div className="max-w-4xl mx-auto text-center">
           {/* Trust badge */}
           <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full px-4 py-2 mb-8 text-white/90 text-sm font-medium">
@@ -40,11 +40,11 @@ export default function Hero() {
                 <Star key={i} size={12} className="fill-yellow-400 text-yellow-400" />
               ))}
             </div>
-            <span>Winning the trust from worldwide</span>
+            <span>Trusted by 50+ businesses across Nepal</span>
           </div>
 
           {/* Main headline */}
-          <h1 className="font-display font-extrabold text-5xl md:text-6xl lg:text-7xl leading-tight text-white mb-6">
+          <h1 className="font-display font-extrabold text-4xl sm:text-5xl md:text-6xl lg:text-7xl leading-[1.1] text-white mb-5 sm:mb-6 px-2">
             We Build{" "}
             <span className="relative">
               <span className="gradient-text">Digital Futures</span>
@@ -68,58 +68,58 @@ export default function Hero() {
                 </defs>
               </svg>
             </span>{" "}
-            for All Businesses
+            for Nepalese Businesses
           </h1>
 
           {/* Subheadline */}
-          <p className="text-lg md:text-xl text-blue-200/80 mb-10 max-w-2xl mx-auto leading-relaxed font-light">
+          <p className="text-base sm:text-lg md:text-xl text-blue-200/80 mb-8 sm:mb-10 max-w-2xl mx-auto leading-relaxed font-light px-2">
             From stunning websites to powerful digital marketing strategies —
             Complete Web Solutions Nepal delivers results that grow your business
             in today's competitive online world.
           </p>
 
           {/* Service badges */}
-          <div className="flex flex-wrap justify-center gap-2 mb-12">
+          <div className="flex flex-wrap justify-center gap-2 mb-8 sm:mb-12 px-2">
             {badges.map((badge) => (
               <span
                 key={badge}
-                className="inline-flex items-center gap-1.5 bg-white/10 border border-white/15 backdrop-blur-sm text-white/85 text-sm px-4 py-1.5 rounded-full"
+                className="inline-flex items-center gap-1.5 bg-white/10 border border-white/20 backdrop-blur-sm text-white/85 text-xs sm:text-sm px-3 sm:px-4 py-1.5 rounded-full"
               >
-                <CheckCircle2 size={13} className="text-cyan-400" />
+                <CheckCircle2 size={12} className="text-cyan-400" />
                 {badge}
               </span>
             ))}
           </div>
 
           {/* CTAs */}
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4 px-4">
             <Link
               href="#contact"
-              className="group btn-primary flex items-center gap-2 text-base"
+              className="group w-full sm:w-auto btn-primary flex items-center justify-center gap-2 text-sm sm:text-base"
             >
               Start Your Project
-              <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
+              <ArrowRight size={17} className="group-hover:translate-x-1 transition-transform" />
             </Link>
             <Link
               href="#services"
-              className="btn-outline border-white/30 text-white hover:bg-white/10 hover:border-white/50 text-base"
+              className="w-full sm:w-auto text-center border-2 border-white/30 text-white hover:bg-white/10 hover:border-white/50 font-semibold px-8 py-3 rounded-full transition-all duration-200 text-sm sm:text-base"
             >
               Explore Services
             </Link>
           </div>
 
           {/* Stats */}
-          <div className="mt-16 grid grid-cols-3 gap-8 max-w-lg mx-auto border-t border-white/10 pt-12">
+          <div className="mt-12 sm:mt-16 grid grid-cols-3 gap-4 sm:gap-8 max-w-sm sm:max-w-lg mx-auto border-t border-white/10 pt-10 sm:pt-12">
             {[
               { value: "50+", label: "Projects Delivered" },
               { value: "100%", label: "Client Satisfaction" },
               { value: "24/7", label: "Support Available" },
             ].map(({ value, label }) => (
               <div key={label} className="text-center">
-                <div className="font-display font-extrabold text-3xl text-white">
+                <div className="font-display font-extrabold text-2xl sm:text-3xl text-white">
                   {value}
                 </div>
-                <div className="text-xs text-blue-300/70 mt-1 tracking-wide">
+                <div className="text-[10px] sm:text-xs text-blue-300/70 mt-1 tracking-wide leading-tight">
                   {label}
                 </div>
               </div>

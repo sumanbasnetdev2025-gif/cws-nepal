@@ -1,12 +1,10 @@
-/* Import fonts */
 @import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&display=swap');
 
-/* Tailwind directives */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* Base layer: colors, fonts, and global styles */
+
 @layer base {
   :root {
     --background: 220 20% 97%;
@@ -48,12 +46,8 @@
     --cws-light: #f0f6ff;
   }
 
-  /* Global element styles */
   * {
-    /* Apply a subtle border globally if desired */
-    border-width: 1px;
-    border-color: hsl(var(--border));
-    box-sizing: border-box;
+    @apply border-border;
   }
 
   body {
@@ -67,10 +61,9 @@
   }
 }
 
-/* Components layer: utilities and reusable classes */
 @layer components {
   .section-padding {
-    @apply py-20 px-6 md:px-10 lg:px-16;
+    @apply py-16 sm:py-20 px-4 sm:px-6 lg:px-12;
   }
 
   .container-max {
@@ -145,7 +138,6 @@ html { scroll-behavior: smooth; }
 .stagger-6 { animation-delay: 0.6s; }
 
 .opacity-0-init { opacity: 0; }
-
 * {
   outline: none !important;
   border: none !important;

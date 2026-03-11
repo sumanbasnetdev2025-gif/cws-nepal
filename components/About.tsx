@@ -36,15 +36,15 @@ const whyUs = [
 
 export default function About() {
   return (
-    <section id="about" className="section-padding bg-white">
-      <div className="container-max">
+    <section id="about" className="py-16 sm:py-20 px-4 sm:px-6 lg:px-12 bg-white">
+      <div className="max-w-7xl mx-auto">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           {/* Left: Content */}
           <div>
             <span className="inline-block text-blue-700 font-semibold text-sm tracking-widest uppercase mb-3 bg-blue-50 px-4 py-1.5 rounded-full border border-blue-100">
               About Us
             </span>
-            <h2 className="font-display font-extrabold text-4xl md:text-5xl text-slate-900 mb-6 leading-tight">
+            <h2 className="font-display font-extrabold text-3xl sm:text-4xl md:text-5xl text-slate-900 mb-6 leading-tight">
               Nepal's Trusted
               <br />
               <span className="gradient-text">Digital Partner</span>

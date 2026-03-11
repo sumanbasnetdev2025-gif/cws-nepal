@@ -88,14 +88,14 @@ const services = [
 
 export default function Services() {
   return (
-    <section id="services" className="section-padding bg-slate-50">
-      <div className="container-max">
+    <section id="services" className="py-16 sm:py-20 px-4 sm:px-6 lg:px-12 bg-slate-50">
+      <div className="max-w-7xl mx-auto">
         {/* Section header */}
         <div className="text-center mb-16">
           <span className="inline-block text-blue-700 font-semibold text-sm tracking-widest uppercase mb-3 bg-blue-50 px-4 py-1.5 rounded-full border border-blue-100">
             Our Services
           </span>
-          <h2 className="font-display font-extrabold text-4xl md:text-5xl text-slate-900 mb-4">
+          <h2 className="font-display font-extrabold text-3xl sm:text-4xl md:text-5xl text-slate-900 mb-4">
             Everything Your Business
             <br />
             <span className="gradient-text">Needs to Succeed Online</span>
@@ -107,7 +107,7 @@ export default function Services() {
         </div>
 
         {/* Services grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-5">
           {services.map((service, i) => {
             const Icon = service.icon;
             return (

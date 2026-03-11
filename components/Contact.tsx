@@ -118,14 +118,14 @@ export default function Contact() {
   };
 
   return (
-    <section id="contact" className="section-padding bg-slate-50">
-      <div className="container-max">
+    <section id="contact" className="py-16 sm:py-20 px-4 sm:px-6 lg:px-12 bg-slate-50">
+      <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="text-center mb-16">
           <span className="inline-block text-blue-700 font-semibold text-sm tracking-widest uppercase mb-3 bg-blue-50 px-4 py-1.5 rounded-full border border-blue-100">
             Contact Us
           </span>
-          <h2 className="font-display font-extrabold text-4xl md:text-5xl text-slate-900 mb-4">
+          <h2 className="font-display font-extrabold text-3xl sm:text-4xl md:text-5xl text-slate-900 mb-4">
             Let's Build Something{" "}
             <span className="gradient-text">Amazing Together</span>
           </h2>
@@ -135,7 +135,7 @@ export default function Contact() {
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-5 gap-10">
+        <div className="grid lg:grid-cols-5 gap-8 lg:gap-10">
           {/* Left: Contact info */}
           <div className="lg:col-span-2 space-y-4">
             <h3 className="font-display font-bold text-xl text-slate-900 mb-6">
